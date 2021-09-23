@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Axe
   m_EditorClassIdentifier: 
   collected: 0
-  art: {fileID: 0}
-  artMaterial: {fileID: 0}
+  costValue: 0
+  art3D: {fileID: 0}
+  art2D: {fileID: 9147546874185701050, guid: 2199f5f51d79c48c797b91d90db4f0f5, type: 3}
+  artColorTint: {r: 0, g: 0, b: 1, a: 1}
   powerLevel: 0

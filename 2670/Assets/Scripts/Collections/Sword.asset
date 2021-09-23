@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8caca92272cab4552b972e7335a26d6d, type: 3}
   m_Name: Sword
   m_EditorClassIdentifier: 
-  collected: 1
+  collected: 0
   costValue: 0
-  art: {fileID: 0}
-  artColorTint: {r: 0, g: 0, b: 1, a: 1}
+  art3D: {fileID: 0}
+  art2D: {fileID: 5601323976189978565, guid: 2199f5f51d79c48c797b91d90db4f0f5, type: 3}
+  artColorTint: {r: 0.092196584, g: 1, b: 0, a: 1}
   powerLevel: 0

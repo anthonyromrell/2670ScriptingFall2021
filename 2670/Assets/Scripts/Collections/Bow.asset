@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8caca92272cab4552b972e7335a26d6d, type: 3}
   m_Name: Bow
   m_EditorClassIdentifier: 
-  art: {fileID: 0}
-  artMaterial: {fileID: 0}
+  collected: 0
+  costValue: 0
+  art3D: {fileID: 0}
+  art2D: {fileID: -761887118410055393, guid: 2199f5f51d79c48c797b91d90db4f0f5, type: 3}
+  artColorTint: {r: 1, g: 0, b: 0.07980776, a: 1}
   powerLevel: 0
