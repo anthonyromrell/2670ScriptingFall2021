@@ -63,3 +63,7 @@ crashlytics-build.properties
 
 
 2670/Packages/
+
+2670/Assets/_TerrainAutoUpgrade/
+
+*.DS_Store

@@ -1,0 +1,6 @@
+[submodule "2670/Assets/NavMeshComponents"]
+	path = 2670/Assets/NavMeshComponents
+	url = https://github.com/anthonyromrell/NavMeshComponents.git
+[submodule "2670/Assets/Tools"]
+	path = 2670/Assets/Tools
+	url = https://github.com/anthonyromrell/ArtisanDream.Tools.git
