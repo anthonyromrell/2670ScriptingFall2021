@@ -10,24 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 21667c5c1ee7a4111a1243f78270d1dd, type: 3}
-  m_Name: PlayerHealth
+  m_Name: PlayerXP
   m_EditorClassIdentifier: 
-  value: 1
+  value: 0.4
   minValueEvent:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11400000, guid: cd7c935b292a74f6e8d84318041fa5b2, type: 2}
-        m_TargetAssemblyTypeName: GameAction, Assembly-CSharp
-        m_MethodName: RaiseAction
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   maxValueEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -58,7 +46,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 11400000, guid: ca4eb5144e64d4c3c9220d6333bc9a17, type: 2}
+      - m_Target: {fileID: 11400000, guid: 210d0e75c54bd4d9ea27f39ea6a36606, type: 2}
         m_TargetAssemblyTypeName: GameAction, Assembly-CSharp
         m_MethodName: RaiseAction
         m_Mode: 1

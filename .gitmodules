@@ -4,3 +4,6 @@
 [submodule "2670/Assets/Tools"]
 	path = 2670/Assets/Tools
 	url = https://github.com/anthonyromrell/ArtisanDream.Tools.git
+[submodule "2670WithGit/Assets/Tools"]
+	path = 2670WithGit/Assets/Tools
+	url = https://github.com/anthonyromrell/ArtisanDream.Tools.git
