@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
@@ -6,10 +7,15 @@ public class RigidBodyBehaviour : MonoBehaviour
     public float force;
     
     private Rigidbody rb;
-    void Start()
+    IEnumerator Start()
     {
         rb = GetComponent<Rigidbody>();
-        rb.AddExplosionForce(force, Vector3.forward, 3f);
+        rb.velocity = new Vector3(force, 0, 0);
+        yield return new WaitForSeconds(0.5f);
+        rb.Sleep();
+        yield return new WaitForSeconds(0.5f);
+        rb.WakeUp();
+        rb.AddForce(0, 300f, 0);
+        StartCoroutine(Start());
     }
-    
 }
