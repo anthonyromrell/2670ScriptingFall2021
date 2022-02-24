@@ -6,13 +6,13 @@ using UnityEngine;
 public class Players : MonoBehaviour, IMove
 {
     public ScriptableObject powerUp;
-    public IPowerUp temp;
+   // public IPowerUp temp;
     private IPowerUp powerUpObj;
     
     private void Start()
     {
         powerUpObj = powerUp as IPowerUp;
-        print(powerUpObj.PowerLevel);
+       // print(powerUpObj.PowerLevel);
     }
 
 

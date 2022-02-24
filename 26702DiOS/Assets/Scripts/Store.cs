@@ -5,14 +5,19 @@ using UnityEngine;
 public class Store : ScriptableObject
 {
     public List<ScriptableObject> purchaseList;
-    private List<IPurchasable> purchasables;
+    private readonly List<IPurchasable> iPurchaseList;
 
-    private void OnEnable()
+    public Store(List<IPurchasable> iPurchaseList)
     {
-        purchasables = new List<IPurchasable>();
+        this.iPurchaseList = iPurchaseList;
+        UpdateList();
+    }
+    
+    private void UpdateList()
+    {
         foreach (var obj in purchaseList)
         {
-            purchasables.Add(obj as IPurchasable);
+            iPurchaseList.Add(obj as IPurchasable);
         }
     }
 }

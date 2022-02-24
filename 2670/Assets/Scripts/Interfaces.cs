@@ -1,0 +1,9 @@
+interface IPool
+{
+    
+}
+
+interface IPowerUp
+{
+    
+}

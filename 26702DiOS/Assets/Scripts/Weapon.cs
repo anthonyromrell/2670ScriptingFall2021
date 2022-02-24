@@ -1,22 +1,16 @@
 using UnityEngine;
 
 [CreateAssetMenu]
-public class Weapon : ScriptableObject, IPurchasable
+public class Weapon : ArtBase, IPurchasable
 {
     public int powerLevel;
-    public Sprite art;
-    private bool purchased;
-    private int cashValue;
+    public GameObject fxArt;
 
-    public bool Purchased
+    public void Fire()
     {
-        get => purchased;
-        set => purchased = value;
+        Debug.Log("Fire");
     }
 
-    public int CashValue
-    {
-        get => cashValue;
-        set => cashValue = value;
-    }
+    public bool Purchased { get; set; }
+    public int CashValue { get; set; }
 }
