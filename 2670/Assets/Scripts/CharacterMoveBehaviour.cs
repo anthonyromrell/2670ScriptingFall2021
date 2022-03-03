@@ -26,7 +26,7 @@ public class CharacterMoveBehaviour : MonoBehaviour
             Input.GetAxis(horizontalInput.ToString()),
             0,
             Input.GetAxis(verticalInput.ToString()));
-        movement *= speed.value;
+        movement *= speed.Value;
         movement *= Time.deltaTime;
         cc.Move(movement);
     }

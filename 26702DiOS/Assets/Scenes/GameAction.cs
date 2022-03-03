@@ -4,10 +4,10 @@ using UnityEngine.Events;
 [CreateAssetMenu]
 public class GameAction : ScriptableObject
 {
-    public UnityAction unityActionObj;
+    public UnityAction unityAction;
         
     public void Raise ()
     {
-        unityActionObj?.Invoke();
+        unityAction?.Invoke();
     }
 }
