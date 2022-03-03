@@ -72,7 +72,7 @@
                     "id": "6433ffce-cfa2-4768-8d55-745bb3ab8ab8",
                     "path": "<Keyboard>/leftArrow",
                     "interactions": "",
-                    "processors": "Scale(factor=100)",
+                    "processors": "",
                     "groups": "",
                     "action": "Move",
                     "isComposite": false,

@@ -1,4 +1,4 @@
-// GENERATED AUTOMATICALLY FROM 'Assets/IS/GameInputs.inputactions'
+// GENERATED AUTOMATICALLY FROM 'Assets/IS/AnimInputs.inputactions'
 
 using System;
 using System.Collections;
@@ -6,31 +6,23 @@ using System.Collections.Generic;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Utilities;
 
-public class @GameInputs : IInputActionCollection, IDisposable
+public class @AnimInputs : IInputActionCollection, IDisposable
 {
     public InputActionAsset asset { get; }
-    public @GameInputs()
+    public @AnimInputs()
     {
         asset = InputActionAsset.FromJson(@"{
-    ""name"": ""GameInputs"",
+    ""name"": ""AnimInputs"",
     ""maps"": [
         {
             ""name"": ""Normal"",
-            ""id"": ""952edc56-b1b7-4574-94ae-a9dcdd4bb8cd"",
+            ""id"": ""1f34aa17-5bc9-4ee0-83e8-aca588861b55"",
             ""actions"": [
                 {
                     ""name"": ""Jump"",
                     ""type"": ""Button"",
-                    ""id"": ""cc1b008e-4a5b-4b4e-a38a-b005b80cacb7"",
+                    ""id"": ""bd0819df-ec56-4955-87ad-0537cb6e6c6d"",
                     ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """"
-                },
-                {
-                    ""name"": ""Move"",
-                    ""type"": ""Value"",
-                    ""id"": ""1a56cffd-171a-40fc-88df-989bb1b93dc1"",
-                    ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """"
                 }
@@ -38,7 +30,7 @@ public class @GameInputs : IInputActionCollection, IDisposable
             ""bindings"": [
                 {
                     ""name"": """",
-                    ""id"": ""e537d310-a5a3-4f0c-aa40-77ad3f9a03c7"",
+                    ""id"": ""27bce88d-d174-4ba4-ba1c-ca680110ee17"",
                     ""path"": ""<Keyboard>/space"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -48,59 +40,42 @@ public class @GameInputs : IInputActionCollection, IDisposable
                     ""isPartOfComposite"": false
                 },
                 {
-                    ""name"": ""2D Vector"",
-                    ""id"": ""e4f95830-c58e-4320-9061-14a9a3070376"",
-                    ""path"": ""2DVector"",
+                    ""name"": """",
+                    ""id"": ""892f1887-952a-44db-945c-bb8a5e200eab"",
+                    ""path"": ""<Keyboard>/t"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Move"",
-                    ""isComposite"": true,
+                    ""action"": ""Jump"",
+                    ""isComposite"": false,
                     ""isPartOfComposite"": false
-                },
+                }
+            ]
+        },
+        {
+            ""name"": ""WallClimb"",
+            ""id"": ""ba4ae960-dc49-4f0c-87ee-a365350347cb"",
+            ""actions"": [
                 {
-                    ""name"": ""up"",
-                    ""id"": ""48db3711-9ea3-4782-9c7f-1fa28f863bdf"",
-                    ""path"": ""<Keyboard>/upArrow"",
+                    ""name"": ""New action"",
+                    ""type"": ""Button"",
+                    ""id"": ""9338643e-8712-4e1b-bcbb-7f2428710389"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""f5a0bffe-5b13-4858-80ba-e188a7388dc2"",
+                    ""path"": """",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Move"",
+                    ""action"": ""New action"",
                     ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""down"",
-                    ""id"": ""397d996f-71d8-4272-ac51-808e5fdb5a8f"",
-                    ""path"": ""<Keyboard>/downArrow"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Move"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""left"",
-                    ""id"": ""6433ffce-cfa2-4768-8d55-745bb3ab8ab8"",
-                    ""path"": ""<Keyboard>/leftArrow"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Move"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""right"",
-                    ""id"": ""33430691-141d-4307-80fc-0fd9c9835e03"",
-                    ""path"": ""<Keyboard>/rightArrow"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Move"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -110,7 +85,9 @@ public class @GameInputs : IInputActionCollection, IDisposable
         // Normal
         m_Normal = asset.FindActionMap("Normal", throwIfNotFound: true);
         m_Normal_Jump = m_Normal.FindAction("Jump", throwIfNotFound: true);
-        m_Normal_Move = m_Normal.FindAction("Move", throwIfNotFound: true);
+        // WallClimb
+        m_WallClimb = asset.FindActionMap("WallClimb", throwIfNotFound: true);
+        m_WallClimb_Newaction = m_WallClimb.FindAction("New action", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -161,13 +138,11 @@ public class @GameInputs : IInputActionCollection, IDisposable
     private readonly InputActionMap m_Normal;
     private INormalActions m_NormalActionsCallbackInterface;
     private readonly InputAction m_Normal_Jump;
-    private readonly InputAction m_Normal_Move;
     public struct NormalActions
     {
-        private @GameInputs m_Wrapper;
-        public NormalActions(@GameInputs wrapper) { m_Wrapper = wrapper; }
+        private @AnimInputs m_Wrapper;
+        public NormalActions(@AnimInputs wrapper) { m_Wrapper = wrapper; }
         public InputAction @Jump => m_Wrapper.m_Normal_Jump;
-        public InputAction @Move => m_Wrapper.m_Normal_Move;
         public InputActionMap Get() { return m_Wrapper.m_Normal; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -180,9 +155,6 @@ public class @GameInputs : IInputActionCollection, IDisposable
                 @Jump.started -= m_Wrapper.m_NormalActionsCallbackInterface.OnJump;
                 @Jump.performed -= m_Wrapper.m_NormalActionsCallbackInterface.OnJump;
                 @Jump.canceled -= m_Wrapper.m_NormalActionsCallbackInterface.OnJump;
-                @Move.started -= m_Wrapper.m_NormalActionsCallbackInterface.OnMove;
-                @Move.performed -= m_Wrapper.m_NormalActionsCallbackInterface.OnMove;
-                @Move.canceled -= m_Wrapper.m_NormalActionsCallbackInterface.OnMove;
             }
             m_Wrapper.m_NormalActionsCallbackInterface = instance;
             if (instance != null)
@@ -190,16 +162,49 @@ public class @GameInputs : IInputActionCollection, IDisposable
                 @Jump.started += instance.OnJump;
                 @Jump.performed += instance.OnJump;
                 @Jump.canceled += instance.OnJump;
-                @Move.started += instance.OnMove;
-                @Move.performed += instance.OnMove;
-                @Move.canceled += instance.OnMove;
             }
         }
     }
     public NormalActions @Normal => new NormalActions(this);
+
+    // WallClimb
+    private readonly InputActionMap m_WallClimb;
+    private IWallClimbActions m_WallClimbActionsCallbackInterface;
+    private readonly InputAction m_WallClimb_Newaction;
+    public struct WallClimbActions
+    {
+        private @AnimInputs m_Wrapper;
+        public WallClimbActions(@AnimInputs wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Newaction => m_Wrapper.m_WallClimb_Newaction;
+        public InputActionMap Get() { return m_Wrapper.m_WallClimb; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(WallClimbActions set) { return set.Get(); }
+        public void SetCallbacks(IWallClimbActions instance)
+        {
+            if (m_Wrapper.m_WallClimbActionsCallbackInterface != null)
+            {
+                @Newaction.started -= m_Wrapper.m_WallClimbActionsCallbackInterface.OnNewaction;
+                @Newaction.performed -= m_Wrapper.m_WallClimbActionsCallbackInterface.OnNewaction;
+                @Newaction.canceled -= m_Wrapper.m_WallClimbActionsCallbackInterface.OnNewaction;
+            }
+            m_Wrapper.m_WallClimbActionsCallbackInterface = instance;
+            if (instance != null)
+            {
+                @Newaction.started += instance.OnNewaction;
+                @Newaction.performed += instance.OnNewaction;
+                @Newaction.canceled += instance.OnNewaction;
+            }
+        }
+    }
+    public WallClimbActions @WallClimb => new WallClimbActions(this);
     public interface INormalActions
     {
         void OnJump(InputAction.CallbackContext context);
-        void OnMove(InputAction.CallbackContext context);
+    }
+    public interface IWallClimbActions
+    {
+        void OnNewaction(InputAction.CallbackContext context);
     }
 }

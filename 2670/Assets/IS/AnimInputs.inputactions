@@ -1,0 +1,71 @@
+{
+    "name": "AnimInputs",
+    "maps": [
+        {
+            "name": "Normal",
+            "id": "1f34aa17-5bc9-4ee0-83e8-aca588861b55",
+            "actions": [
+                {
+                    "name": "Jump",
+                    "type": "Button",
+                    "id": "bd0819df-ec56-4955-87ad-0537cb6e6c6d",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "27bce88d-d174-4ba4-ba1c-ca680110ee17",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "892f1887-952a-44db-945c-bb8a5e200eab",
+                    "path": "<Keyboard>/t",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "WallClimb",
+            "id": "ba4ae960-dc49-4f0c-87ee-a365350347cb",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "9338643e-8712-4e1b-bcbb-7f2428710389",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "f5a0bffe-5b13-4858-80ba-e188a7388dc2",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

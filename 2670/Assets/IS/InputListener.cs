@@ -38,6 +38,7 @@ public class InputListener : MonoBehaviour
 
     private void JumpOnPerformed(InputAction.CallbackContext obj)
     {
+        print(obj);
         forces.Set(0, force*10f, 0);
         rigidbody.AddForce(forces, ForceMode.Force);
     } 
