@@ -9,7 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b56b8b7b576534bd8b28ea1df9e0db18, type: 3}
-  m_Name: Cash
+  m_Script: {fileID: 11500000, guid: e76dacb67a3ac4ae3a47214d1b7821e3, type: 3}
+  m_Name: Knife
   m_EditorClassIdentifier: 
-  value: 9
+  art: {fileID: 2747690628134850419, guid: 0441668665bc744dc9661c86e8d8e769, type: 3}
+  price: 10
+  collected: 1

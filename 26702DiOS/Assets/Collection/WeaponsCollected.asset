@@ -9,7 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b56b8b7b576534bd8b28ea1df9e0db18, type: 3}
-  m_Name: Cash
+  m_Script: {fileID: 11500000, guid: 8b1bf3998c6d04a6691c102c44fd38af, type: 3}
+  m_Name: WeaponsCollected
   m_EditorClassIdentifier: 
-  value: 9
+  cash: {fileID: 11400000, guid: 447a93d096c114f8faf6ae185108b323, type: 2}
+  layoutPrefab: {fileID: 0}
+  inventoryItemList: []
