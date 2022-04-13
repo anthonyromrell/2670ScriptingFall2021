@@ -1,0 +1,33 @@
+{
+    "name": "ControllerActions",
+    "maps": [
+        {
+            "name": "Normal",
+            "id": "efb8cee6-c97a-4155-a1c0-80829bc206a2",
+            "actions": [
+                {
+                    "name": "Key",
+                    "type": "Button",
+                    "id": "0d75ea14-03e5-403d-a9cf-a6731614dab1",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "753a288c-daf1-46ae-b4ab-2d7c4be7d5b2",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Key",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

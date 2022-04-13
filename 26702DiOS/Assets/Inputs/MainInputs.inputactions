@@ -1,0 +1,71 @@
+{
+    "name": "MainInputs",
+    "maps": [
+        {
+            "name": "Normal",
+            "id": "044126e5-3eed-4758-8be3-6ea3c4fa4128",
+            "actions": [
+                {
+                    "name": "Key",
+                    "type": "Button",
+                    "id": "426f3066-4d18-46bd-a753-186c280daa04",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "KeyDisable",
+                    "type": "Button",
+                    "id": "f829c983-abbe-443b-896e-bd5b85ce21c8",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "KeyEnable",
+                    "type": "Button",
+                    "id": "d340a852-c116-4c2d-866b-0c9e067d1823",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "f2f6ae22-de16-4411-8b01-b490932bed96",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Key",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "05dc40eb-592b-45d9-aeb4-16459484770a",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "KeyDisable",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "417768ec-aef4-4a7d-a706-2f4b09b80123",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "KeyEnable",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
