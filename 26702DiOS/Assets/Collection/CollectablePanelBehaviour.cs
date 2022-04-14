@@ -35,6 +35,7 @@ public class CollectablePanelBehaviour : MonoBehaviour
     {
         collectableData.collected = true;
         cash.value -= collectableData.price;
+        checkCollectionAction.unityAction.Invoke();
     }
 
     private void Start()

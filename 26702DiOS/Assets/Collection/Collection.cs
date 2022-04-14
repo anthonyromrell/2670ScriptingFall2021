@@ -1,7 +1,6 @@
 using System.Collections.Generic;
-using Unity.Mathematics;
 using UnityEngine;
-using UnityEngine.Events;
+
 
 [CreateAssetMenu]
 public class Collection : ScriptableObject
@@ -9,7 +8,7 @@ public class Collection : ScriptableObject
     public IntData cash;
     public CollectablePanelBehaviour layoutObject;
     public List<Collectable> collectablesList;
-    
+
     public void BuildCollectionLayout(Transform obj)
     {
         foreach (var collectable in collectablesList)
