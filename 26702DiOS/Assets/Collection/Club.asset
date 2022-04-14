@@ -12,4 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e76dacb67a3ac4ae3a47214d1b7821e3, type: 3}
   m_Name: Club
   m_EditorClassIdentifier: 
-  art: {fileID: -2413806693520163455, guid: 1576f5ba7b4a5422ca2401a618f769fe, type: 3}
+  art: {fileID: -9095717837082945937, guid: fa4bf3c8f27f84d428ef56723cbf6742, type: 3}
+  price: 9
+  collected: 0

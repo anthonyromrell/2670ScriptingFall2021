@@ -239,9 +239,9 @@ MonoBehaviour:
   startEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11400000, guid: 11c8eaab7954548d18a1c628455aa1ec, type: 2}
-        m_TargetAssemblyTypeName: Inventory, Assembly-CSharp
-        m_MethodName: ConstructInventoryLayout
+      - m_Target: {fileID: 11400000, guid: 7475882ef717b4b5882e2508d111226e, type: 2}
+        m_TargetAssemblyTypeName: Collection, Assembly-CSharp
+        m_MethodName: BuildCollectionLayout
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 43745151}

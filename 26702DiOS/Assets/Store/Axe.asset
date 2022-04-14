@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 914b12235e9aa41a7a273cc34fb5bd4e, type: 3}
   m_Name: Axe
   m_EditorClassIdentifier: 
-  value: 0
+  value: 9
+  unlocked: 0
   purchased: 0

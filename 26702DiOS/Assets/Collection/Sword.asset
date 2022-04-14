@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e76dacb67a3ac4ae3a47214d1b7821e3, type: 3}
   m_Name: Sword
   m_EditorClassIdentifier: 
-  art: {fileID: 3625043607559282579, guid: 441ed1c5382004293b6f77b9ce051129, type: 3}
-  price: 5
+  art: {fileID: -2413806693520163455, guid: 1576f5ba7b4a5422ca2401a618f769fe, type: 3}
+  price: 10
+  collected: 1

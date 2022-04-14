@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using Unity.Mathematics;
 using UnityEngine;
+using UnityEngine.Events;
 
 [CreateAssetMenu]
 public class Collection : ScriptableObject
@@ -8,17 +9,14 @@ public class Collection : ScriptableObject
     public IntData cash;
     public CollectablePanelBehaviour layoutObject;
     public List<Collectable> collectablesList;
-
+    
     public void BuildCollectionLayout(Transform obj)
     {
-        foreach (var item in collectablesList)
+        foreach (var collectable in collectablesList)
         {
             var newPanel = Instantiate(layoutObject, obj);
-            newPanel.image.sprite = item.art;
-            newPanel.label.text = item.name;
-            newPanel.button.interactable = CheckPrice(item);
-            newPanel.buttonLabel.text = "Buy $" + item.price;
-            newPanel.button.gameObject.SetActive(!item.collected);
+            newPanel.collectableData = collectable;
+            newPanel.cash = cash;
         }
     }
 

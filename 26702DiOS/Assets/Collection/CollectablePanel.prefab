@@ -445,7 +445,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d291d5913db814675bb0bf7195cb1270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 0}
-  label: {fileID: 0}
-  buttonLabel: {fileID: 0}
-  button: {fileID: 0}
+  collectableData: {fileID: 0}
+  cash: {fileID: 0}
+  checkCollectionAction: {fileID: 11400000, guid: 8eea8bef90e5d4c7889a9fbc638cda74, type: 2}
