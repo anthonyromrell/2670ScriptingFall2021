@@ -1,35 +1,25 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CollectionUI : MonoBehaviour
 {
     public Collection collection;
+    private WaitForSeconds wfs;
+    public float holdTime = 0.2f;
 
     public void StartBuild(Transform obj)
     {
+        wfs = new WaitForSeconds(holdTime);
         StartCoroutine(BuildCollectionLayout(obj));
     }
-    
-    
-    public IEnumerator BuildCollectionLayout(Transform obj)
+    private IEnumerator BuildCollectionLayout(Transform obj)
     {
         foreach (var collectable in collection.collectablesList)
         {
-            yield return new WaitForSeconds(0.2f);
+            yield return wfs;
             var newPanel = Instantiate(collection.layoutObject, obj);
-            newPanel.collectableData = collectable;
+            newPanel.collectable = collectable;
             newPanel.cash = collection.cash;
         }
-    }
-
-    public bool CheckIfCollected(Collectable obj)
-    {
-        return obj.collected;
-    } 
-    
-    private bool CheckPrice(Collectable obj)
-    {
-        return obj.price <= collection.cash.value;
     }
 }

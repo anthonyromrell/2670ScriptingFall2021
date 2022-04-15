@@ -221,7 +221,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 11400000, guid: 8eea8bef90e5d4c7889a9fbc638cda74, type: 2}
         m_TargetAssemblyTypeName: GameAction, Assembly-CSharp
-        m_MethodName: Raise
+        m_MethodName: RaiseAction
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

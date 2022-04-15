@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
@@ -8,10 +7,10 @@ public class CollectablePanelBehaviour : MonoBehaviour
     private Image image;
     private Text label, buttonLabel;
     private Button button;
-    [HideInInspector] public Collectable collectableData;
+    [HideInInspector] public Collectable collectable;
     [HideInInspector] public IntData cash;
-    private UnityAction collectAction;
-    public GameAction checkCollectionAction;
+    private UnityAction collect;
+    public GameAction checkCollection;
     private void Awake()
     {
         var images = GetComponentsInChildren<Image>();
@@ -19,42 +18,35 @@ public class CollectablePanelBehaviour : MonoBehaviour
         label = GetComponentInChildren<Text>();
         button = GetComponentInChildren<Button>();
         buttonLabel = button.GetComponentInChildren<Text>();
-        collectAction += CollectAction;
-        checkCollectionAction.unityAction += CheckButton;
-        button.onClick.AddListener(collectAction);
+        collect += CollectAction;
+        checkCollection.Raise += CheckButton;
+        button.onClick.AddListener(collect);
+    }
+    
+    private void Start()
+    {
+        ConfigPanel();
+    }
+    
+    private void ConfigPanel ()
+    {
+        image.sprite = collectable.art;
+        label.text = collectable.name;
+        buttonLabel.text = $"Buy ${collectable.price}";
+        CheckButton();
     }
 
     private void CheckButton()
     {
         button.gameObject.SetActive(true);
-        button.interactable = CheckPrice();
-        button.gameObject.SetActive(!collectableData.collected);
+        button.interactable = cash.Value >= collectable.price;
+        button.gameObject.SetActive(!collectable.collected);
     }
 
     private void CollectAction()
     {
-        collectableData.collected = true;
-        cash.value -= collectableData.price;
-        checkCollectionAction.unityAction.Invoke();
-    }
-
-    private void Start()
-    {
-        ConfigPanel();
-    }
-
-    private void ConfigPanel ()
-    {
-        image.sprite = collectableData.art;
-        label.text = collectableData.name;
-        buttonLabel.text = "Buy $" + collectableData.price;
-        CheckButton();
-    }
-
-    
-    
-    private bool CheckPrice()
-    {
-        return cash.value >= collectableData.price;
+        collectable.collected = true;
+        cash.UpdateValueZeroCheck(-collectable.price);
+        checkCollection.Raise.Invoke();
     }
 }

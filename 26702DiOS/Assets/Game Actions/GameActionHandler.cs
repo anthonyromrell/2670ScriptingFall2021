@@ -10,8 +10,8 @@ public class GameActionHandler : MonoBehaviour
     public UnityEvent respondToObjectEvent;
     private void Awake()
     {
-        gameAction.unityAction += Respond;
-        gameAction.unityActionWithObj += UnityActionWithObj;
+        gameAction.Raise += Respond;
+        gameAction.UnityActionWithObj += UnityActionWithObj;
     }
 
     private void UnityActionWithObj(Object obj)

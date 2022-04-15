@@ -7,6 +7,6 @@ public class CoinMultiplier : ScriptableObject
     
     public void MultiplyCoin(int num)
     {
-        coins.value *= num;
+        coins.Value *= num;
     }
 }
