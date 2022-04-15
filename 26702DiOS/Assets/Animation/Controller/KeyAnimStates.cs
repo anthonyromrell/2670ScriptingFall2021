@@ -8,7 +8,7 @@ public class KeyAnimStates : StateMachineBehaviour
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        gameAction.Raise();
+        gameAction.RaiseNoArgs.Invoke();
         Debug.Log("Anim Key");
     }
 

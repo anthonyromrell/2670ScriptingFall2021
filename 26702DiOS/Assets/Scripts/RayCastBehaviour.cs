@@ -31,6 +31,6 @@ public class RayCastBehaviour : MonoBehaviour
         }   
 
         var sendObj = hit.value.collider.gameObject;
-        gameAction.UnityActionWithObj(sendObj);
+        gameAction.Raise(sendObj);
     }
 }
